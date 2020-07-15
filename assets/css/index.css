@@ -1,0 +1,55 @@
+i,em{
+    font-style: normal;
+}
+
+.layui-icon{
+    margin-right: 5px;
+    font-size: 16px !important;
+    vertical-align: bottom;
+}
+
+.layui-nav a{
+    font-size: 12px;
+}
+
+.welcome{
+    height: 60px;
+    padding-left: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #000;
+}
+
+.welcome span,
+.layui-nav #userportrait
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #009688;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.welcome em{
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.layui-nav-child dd{
+    text-indent: 1em;
+}
+
+.layui-nav-child dd .layui-icon{
+    font-size: 12px !important;
+}
+
+.layui-body{
+    overflow: hidden;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+}
