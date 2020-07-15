@@ -1,3 +1,10 @@
+<script>
+    // 判断token是否存在,如果不存在表示没有登录
+    if (!localStorage.getItem('token')) {
+        location.href = 'login.html';
+    }
+</script>
+
 <!DOCTYPE html>
 <html>
 
@@ -30,8 +37,8 @@
                 </li>
 
                 <li class="layui-nav-item">
-                    <a href="javascript:;">
-                        <i class="layui-icon layui-icon-logout logout"
+                    <a href="javascript:;" class="logout">
+                        <i class="layui-icon layui-icon-logout"
                             style="font-size: 18px; color: #fff; vertical-align: bottom;"></i>
                         退出
                     </a>

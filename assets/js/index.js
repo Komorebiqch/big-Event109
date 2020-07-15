@@ -5,22 +5,24 @@ $(function () {
             url: '/my/userinfo',
             success: function (res) {
 
-                // 获取用户名
-                var userName = res.data.nickname || res.data.username;
+                if (!res.status) {
+                    // 获取用户名
+                    var userName = res.data.nickname || res.data.username;
 
-                // 将用户名渲染到标签中
-                $('.welcome em').html('欢迎 &nbsp' + userName);
+                    // 将用户名渲染到标签中
+                    $('.welcome em').html('欢迎 &nbsp' + userName);
 
-                // 判断用户的头像是否为图片
-                if (res.data.user_pic) {
-                    $('.layui-nav-img').attr('src', res.data.user_pic);
-                    $('.layui-nav-img').show().siblings('.userportrait').hide();
-                } else {
-                    $('.layui-nav-img').hide();
-                    $('.userportrait').html(userName.substr(0, 1).toUpperCase()).css('display', 'inline-block');
+                    // 判断用户的头像是否为图片
+                    if (res.data.user_pic) {
+                        $('.layui-nav-img').attr('src', res.data.user_pic);
+                        $('.layui-nav-img').show().siblings('.userportrait').hide();
+                    } else {
+                        $('.layui-nav-img').hide();
+                        $('.userportrait').html(userName.substr(0, 1).toUpperCase()).css('display', 'inline-block');
+                    }
                 }
 
-            }
+            },
         });
     }
 
