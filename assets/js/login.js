@@ -53,7 +53,7 @@ $(function () {
         // 发起POST请求
         $.ajax({
             type: 'POST',
-            url: 'http://www.liulongbin.top:3007/api//login',
+            url: 'http://www.liulongbin.top:3007/api/login',
             data: data,
             success: function (res) {
                 // 提示登录是否成功的消息

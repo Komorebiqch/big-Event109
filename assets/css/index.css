@@ -20,7 +20,7 @@ i,em{
 }
 
 .welcome span,
-.layui-nav #userportrait
+.layui-nav .userportrait
 {
     display: inline-block;
     width: 30px;
@@ -30,6 +30,7 @@ i,em{
     background-color: #009688;
     border-radius: 50%;
     color: #fff;
+    display: none;
 }
 
 .welcome em{
